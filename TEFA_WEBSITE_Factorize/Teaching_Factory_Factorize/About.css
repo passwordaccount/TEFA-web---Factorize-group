@@ -1,0 +1,373 @@
+nav {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  transition: 0.6s;
+  padding: 30px 50px;
+}
+
+nav.sticky {
+  padding: 15px 20px;
+  background: #005631;
+  opacity: 90%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+nav div a {
+  font-size: 35px;
+  text-decoration: none;
+  color: #e8af36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+i {
+  color: aliceblue;
+  font-size: 50px;
+  margin-right: 15px;
+}
+
+
+@media screen and (max-width: 576px) {
+  nav {
+    padding-inline: 30px;
+  }
+}
+
+
+.background{
+  background-image: url(gambar/background/tampaksamping.png);
+  position: sticky;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: 400px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.background-shadow {
+  left: 0;
+  top: 0;
+  height: 100vh;
+  max-height: 400px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.background div div{
+  position: relative;
+  top: 40%;
+  text-align: center;
+  margin-inline: 20%;
+}
+
+.background div div h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .background div div h1 {
+    font-size: 50px;
+  }
+}
+
+.h2_TEI{
+  color: #db9e1b;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.about-section{
+  display: flex;
+  width: 100%;
+  margin-inline: auto;
+  background-image: url(gambar/background/images.jpg);
+}
+
+.about {
+  max-width: 70%;
+  padding: 130px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-information {
+  max-width: 100%;
+  display: block;
+  color: #5e5e5e;
+  margin-inline: 40px;
+}
+
+
+.hrabout1 {
+  width: 100%;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #e8af36;
+}
+
+.hrabout2 {
+  margin-inline: 15%;
+  width: 70%;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #01c872;
+}
+
+.p2 {
+  width: 100%;
+  max-height: 220;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.p1 {
+  width: 100%;
+  max-height: 220;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.about-section div:nth-child(2){
+  width: 30%;
+  background-color:#db9e1b;
+}
+
+@media screen and (max-width: 1040px) {
+  .about-section div:nth-child(2){
+    width: 100%;
+    height: 400px;
+    background-color:#db9e1b;
+  }
+
+  .about{
+    max-width: 100%;
+  }
+}
+
+
+.about-section div:nth-child(2) div{
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+.about-section div:nth-child(2) div input{
+  margin-top: 30px;
+  display: block;
+  margin-inline: auto;
+
+}
+
+@media screen and (max-width: 1040px) {
+  .about-section{
+    display: block;
+  }
+}
+
+
+.about-section div:nth-child(2) div h1{
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.kunjungilink {
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #eaeaea;
+  border: 3px solid #eaeaea;
+  height: 70px;
+  width: 220px;
+  transition: 0.4s;
+}
+
+.kunjungilink:hover {
+  background: #eaeaea;
+  color: #e8af36;
+}
+
+
+
+
+.contact-section {
+  display: flex;
+}
+
+.kontak-text {
+  margin: 40px 30px;
+}
+
+.kontak-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hrabout3 {
+  width: 224px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #e8af36;
+}
+
+.hrabout4 {
+  width: 120px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #01c872;
+}
+
+.kontak-text ul {
+  margin-top: 40px;
+}
+
+.kontak-text ul li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.kontak-text ul li i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #e8af36;
+}
+
+.kontak-text ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.kontak-text ul li a:hover {
+  text-decoration: none;
+  color: #edbe5b;
+}
+
+.kontakkami {
+  background-image: url(gambar/background/images1.jpg);
+  height: fit-content;
+  width: 60%;
+}
+
+.kontak-text div{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 250px;
+  justify-content: center;
+}
+
+.kontak-text div:nth-child(3){
+  margin: auto;
+}
+
+.formpemesanan-link {
+  height: 60px;
+  width: 200px;
+  transition: 0.4s;
+}
+
+.formpemesanan-link:hover {
+  background: #ffae00;
+  color: white;
+}
+
+.kontak-text div input{
+  font-weight: 700;
+  background-color: #ca9523;
+  border: none;
+  color: white;
+}
+
+.contact-section iframe {
+  border-block: 5px solid #e8af36;
+  width: 40%;
+  min-height: 300px;
+}
+
+@media screen and (max-width: 850px) {
+  .section8 {
+    flex-direction: column;
+  }
+
+  .kontakkami {
+    width: 100%;
+  }
+
+  .section8 iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+
+  .section8{
+    flex-direction: column;
+  }
+
+  .section8 iframe{
+    width: 100%;
+  }
+  
+  .kontak-text div{
+    flex-direction: column;
+    margin-inline: auto;
+  }
+
+  .kontak-text div input{
+    margin-left: 25px;
+  }
+
+  .kontak-text ul {
+    padding: 0%;
+  }
+
+  .kontak-text div ul li i{
+    font-size: 30px;
+  }
+
+  .kontak-text div ul li a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .kontak-text div ul li i{
+    font-size: 20px;
+  }
+
+  .kontak-text div ul li a{
+    font-size: 15px;
+  }
+}
+
+
+
+
+footer {
+  background-color: #eaeaea;
+}
+
+footer p {
+  color: #5e5e5e;
+  font-size: smaller;
+  text-align: center;
+  margin: 0;
+}
+

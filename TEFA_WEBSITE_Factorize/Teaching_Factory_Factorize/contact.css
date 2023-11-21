@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo", sans-serif;
+}
+
+nav {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  transition: 0.6s;
+  padding: 30px 50px;
+}
+
+nav.sticky {
+  padding: 15px 20px;
+  background: #005631;
+  opacity: 90%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav div a {
+  font-size: 35px;
+  text-decoration: none;
+  color: #e8af36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+i {
+  color: white;
+  font-size: 50px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    padding-inline: 30px;
+  }
+}
+
+
+
+.main {
+  background-image: url(gambar/background/images.jpg) !important;
+  background-size: auto;
+  font-size: 14px;
+  font-family: "Chivo", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 50px auto;
+  margin-block: 0;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 470px) {
+    .container{
+        max-width: 95%;
+        padding-bottom: 10px;
+    }
+}
+
+.contact-box {
+  background-image: url(gambar/background/images1.jpg);
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-box{
+        display: block;
+    }
+
+}
+
+.contact-left {
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-right {
+    width: 45%;
+  padding: 40px;
+  background: #e8af36;
+  color: white;
+}
+
+@media screen and (max-width: 470px) {
+    .contact-right{
+        padding: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-right{
+        width: 100%;
+    }
+
+}
+
+.container h1 {
+  font-weight: 700;
+  color: #3b3b3b;
+  margin-bottom: 7px;
+}
+
+.container p {
+  margin-bottom: 60px;
+}
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 30px;
+  padding-inline: 25px;
+}
+
+.input-row div:nth-child(5) {
+  width: 80%;
+  padding: 15px;
+}
+
+.input-group {
+  flex-direction: column;
+  max-width: 300px;
+  padding: 20px;
+}
+
+input {
+  width: 280px;
+  border: 3px solid transparent;
+  outline: none;
+  padding-block: 5px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 470px) {
+    input{
+        width: 100%;
+    }
+}
+
+input[type="text"] {
+  transition: 0.5s;
+}
+
+input[type="text"]:hover {
+  border: 3px solid #e8af36;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #e8af36;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  padding-left: 20px;
+  border: 3px solid transparent;
+  outline: none;
+  transition: 0.5s;
+}
+
+textarea:hover {
+  border: 3px solid #e8af36;
+}
+
+textarea:focus {
+  border: 3px solid #e8af36;
+}
+
+.rounded-pill {
+  margin-block: 20px;
+  background-color: transparent;
+  border: 2px solid #e8af36;
+  color: white;
+  transition: 0.3s;
+}
+
+.rounded-pill:hover {
+  background-color: #e8af36;
+  color: white;
+}
+
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: white;
+}
+
+::placeholder {
+  color: #a6a6a6;
+  padding-left: 10px;
+}
+
+button {
+  background: #3b3b3b;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 181, 39, 0.3);
+}
+
+.contact-left h3 {
+  color: white;
+  font-weight: 600;
+  padding: 50px;
+  padding-bottom: 0;
+}
+
+.contact-right {
+  font-weight: 600;
+}
+
+.contact-right h1 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: white;
+}
+
+tr td:first-child {
+  padding-right: 20px;
+}
+tr td {
+  padding-top: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.hrabout1 {
+  width: 224px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #e8af36;
+}
+
+.hrabout2 {
+  width: 120px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #01c872;
+}
+
+
+.banner {
+  background-image: url(gambar/background/tampakdepan.png);
+  position: sticky;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: 400px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.bayangan-banner {
+  left: 0;
+  top: 0;
+  height: 100vh;
+  max-height: 400px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.banner div div {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  margin-inline: 20%;
+}
+
+.banner div div h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media screen and (max-width: 470px) {
+    .banner div div h1{
+        font-size: 50px;
+    }
+
+    }
+
+@media screen and (max-width: 576px) {
+  .HOME div div h1 {
+    font-size: 50px;
+  }
+}
+
+.hrabout1 {
+  width: 100%;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #e8af36;
+}
+
+.hrabout2 {
+  margin-inline: 15%;
+  width: 70%;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #01c872;
+}
+
+.kontak-text ul {
+  margin-top: 40px;
+  width: 300px;
+}
+
+@media screen and (max-width: 470px) {
+    .kontak-text ul{
+        padding: 0;
+    }
+}
+
+.kontak-text ul li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.kontak-text ul li i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.kontak-text ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 370px) {
+    .kontak-text ul li a{
+        font-size: 10px;
+    }
+}
+
+.kontak-text ul li a:hover {
+  text-decoration: none;
+  color: #edbe5b;
+}
+
+
+
+footer {
+  background-color: #eaeaea;
+}
+
+footer p {
+  color: #5e5e5e;
+  font-size: smaller;
+  text-align: center;
+  margin: 0;
+}
+
+
